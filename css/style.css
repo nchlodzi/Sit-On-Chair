@@ -68,30 +68,29 @@ header{
 	display: inline-block;
 }
 
-#container_header{
-	width: 850px;
-	height: 500px;
-	margin: auto;
-	position: relative;
-	display: inline-block;
+#leftarrow > p{
+	font-size: 80px;
+	color: #24b89d;
+	text-align: center;
+	padding-top: 180px;
 }
 
 #blackchair{
-	width: 500px;
-	height: 400px;
+	padding-top: 100px;
+	width: 350px;
+	height: 350px;
 	float: left;
-	position: absolute;
-	top: 60px;
+	margin-left: 30px;
+	display: inline-block;
 }
 
 #text{
+	padding-top: 80px;
 	width: 450px;
 	height: 400px;
-	float: right;
-	margin-left: auto;
-	position: absolute;
-	top: 120px;
-	left: 650px;
+	float: left;
+	margin-left: 60px;
+	display: inline-block;
 }
 
 #bigtext{
@@ -119,15 +118,12 @@ header{
 	color: white;
 	width: 270px;
 	height: 60px;
-	vertical-align: middle;
 	margin: auto;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 60px;
-
 }
-
 
 #rightarrow{
 	width: 150px;
@@ -135,6 +131,13 @@ header{
 	float: right;
 	margin: auto;
 	display: inline-block;
+}
+
+#rightarrow > p{
+	font-size: 80px;
+	color: #24b89d;
+	text-align: center;
+	padding-top: 180px;
 }
 
 
@@ -151,11 +154,53 @@ section{
 	margin-top: 30px;
 	margin-right: 30px;
 	float: left;
+	position: relative;
 }
 
 #box1{
 	margin-left: 65px;
 }
+
+#chair1{
+	width: 330px;
+	height: 65px;
+	z-index: 1;
+	position: absolute;
+	bottom: -120px;
+	left: 130px;
+	font-weight: bold;
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+#chair1 > p{
+	margin-top: 15px;
+	font-size: 16px;
+	width: 140px;
+	border-bottom: 7px solid #24b89d;
+	margin-left: 15px;
+}
+
+#chair2{
+	width: 330px;
+	height: 65px;
+	z-index: 1;
+	position: absolute;
+	bottom: -120px;
+	left: 490px;
+	font-weight: bold;
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+#chair2 > p{
+	margin-top: 15px;
+	font-size: 16px;
+	width: 140px;
+	border-bottom: 7px solid #24b89d;
+	margin-left: 15px;
+}
+
 
 #box_section{
 	width: 300px;
@@ -402,7 +447,7 @@ footer{
 	width: 400px;
 	height: 80px;
 	float: left;
-	font-size: 24px;
+	font-size: 20px;
 	margin-left: 10px;
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -411,7 +456,8 @@ footer{
 #form_ok{
 	float: left;
 	border: 1px solid #27c7ab;
-	padding: 5px;
+	padding: 5px 5px 3px 0;
+	margin-right: 10px;
 }
 
 #submit{
@@ -429,17 +475,27 @@ footer{
 
 #foot_of_footer{
 	margin-top: 100px;
+	width: 100%;
+}
+
+#copyright{
+	display: inline-block;
+	width: 750px;
+	float: left;
 }
 
 #social_links{
-	float: right;
+	float: left;
 	display: inline-block;
+	width: 200px;
 }
 
 #footer_logo{
 	float: right;
 	text-transform: uppercase;
 	display: inline-block;
+	width: 230px;
+	font-size: 20px;
 }
 
 #footer_logo > span{
