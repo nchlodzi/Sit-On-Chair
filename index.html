@@ -9,11 +9,17 @@
 <body>
 	<nav>
 		<div id="logo">sit <span> on</span> chair</div>
-			<ul id="menu">
-				<li>O fimie</li>
-				<li>galeria</li>
-				<li>kontakt</li>
-			</ul>
+			<ol id="menu">
+				<li><a href="#">O firmie</a>
+					<ul>
+						<li><a href="#">Aktualności</a></li>
+						<li><a href="#">Nasz team</a></li>
+						<li><a href="#">Historia</a></li>
+					</ul>
+				</li>
+				<li><a href="#">galeria</a></li>
+				<li><a href="#">kontakt</a></li>
+			</ol>
 	</nav>
 	<header>
 		<div id="leftarrow"><p> < </p></div>
@@ -26,10 +32,14 @@
 		<div id="rightarrow"><p> > </p></div>
 	</header>
 	<section>
-		<img id="box1" src="images/box1_img.jpg">
-		<div id="chair1"><p>Chair CLAIR</p></div>
-		<img id="box2" src="images/box2_img.jpg">
-		<div id="chair2"><p>Chair MARGARITA</p></div>
+		<div id="box_1">
+			<img id="box1" src="images/box1_img.jpg">
+			<div id="chair1"><p>Chair CLAIR</p></div>
+		</div>
+		<div id="box_2">
+			<img id="box2" src="images/box2_img.jpg">
+			<div id="chair2"><p>Chair MARGARITA</p></div>
+		</div>
 		<div id="box_section">
 			<div id="title">Finds all inputs</div>
 			<p id="text3">Find all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events heve been linked.</br></br>Notice there is no change when clicking the checkboxes since no click events heve been linked.</p>
@@ -41,7 +51,11 @@
 			<div class="big_dot"></div>
 			<div class="small_dot"></div>
 			<div class="box_main_title">Basic plan</div>
-			<div class="big_circle"><span>85</span>99 </br>PLN/MSC</div>
+			<div class="big_circle">
+				<div class="big_circle_text">85<span>99 </span>
+					<div class="pln">PLN/MSC</div>
+				</div>
+			</div>
 			<div class="first_option">Zakup towaru + dowóz</div>
 			<div class="second_option">Serwis</div>
 			<div class="button_main">Dołącz</div>
@@ -50,7 +64,11 @@
 			<div class="big_dot"></div>
 			<div class="small_dot"></div>
 			<div class="box_main_title">Standard plan</div>
-			<div class="big_circle"><span>95</span>99 </br> PLN/MSC</div>
+			<div class="big_circle">
+				<div class="big_circle_text">95<span>99 </span>
+				<div class="pln">PLN/MSC</div>
+				</div>
+			</div>
 			<div class="first_option">Zakup towaru + dowóz</div>
 			<div class="second_option">Serwis</div>
 			<div class="third_option">Gwarancja 5 lat</div>
@@ -60,7 +78,11 @@
 			<div class="big_dot"></div>
 			<div class="small_dot"></div>			
 			<div class="box_main_title">Advance plan</div>
-			<div class="big_circle"><span>211</span>00 </br> PLN/MSC</div>
+			<div class="big_circle">
+				<div class="big_circle_text_2">211<span>00 </span> 
+				<div class="pln_2">PLN/MSC</div>
+				</div>
+			</div>
 			<div class="first_option">Zakup towaru + dowóz</div>
 			<div class="second_option">Serwis</div>
 			<div class="third_option">Gwarancja 5 lat</div>
@@ -77,10 +99,9 @@
 	    </div>
 	    <div id="right_footer">
 	    	<img id="red_chair" src="images/red_chair.png">
-	   		 <div id="agree">
-	    	<img id="form_ok" src="images/form_ok.jpg">
-	    	Zgadzam się na przetwarzanie danych osobowych
-	   		 </div>
+	   		<div id="agree">
+	    		<img id="form_ok" src="images/form_ok.jpg">Zgadzam się na przetwarzanie danych osobowych
+	   		</div>
 	    	<input type="submit" id="submit" value="Wyślij" />
 	    </div>
 	    <div id="foot_of_footer">

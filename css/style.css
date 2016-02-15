@@ -32,18 +32,68 @@ nav{
 	float: right;
 	width: 400px;
 	height: 41px;
+	letter-spacing: 1px;
 }
 
-ul > li{
+ol{
 	display: inline-block;
+}
+
+ol > li{
+	display: block;
 	list-style-type: none;
 	padding-top: 13px;
-	text-transform: uppercase;
 	font-size: 14px;
-	font-weight: bold;
-	padding-right: 15px;
-	padding-left: 25px;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	width: 100px;
+}
+
+ol > li > a{
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+ol > li > a:hover{
+	font-weight: bold;
+}
+
+ol > li > ul {
+	padding-left: 0px;
+	margin-top: 25px;
+	display: none;
+}
+
+ol > li:hover > ul{
+	display: block;
+}
+
+ol > li > ul > li{
+	list-style-type: none;
+	background-color: black;
+	width: 120px;
+	height: 25px;
+	display: block;
+	text-align: left;
+	padding-top: 8px; 
+}
+
+ol > li > ul > li > a{
+	text-decoration: none;	
+	color: white;
+	padding-left: 15px;
+	font-size: 15px;
+	letter-spacing: 0;
+	width: 120px;
+	height: 25px;
+
+}
+ol > li > ul > li:hover > a{
+	font-weight: bold;
 }
 
 header{
@@ -80,16 +130,16 @@ header{
 	width: 350px;
 	height: 350px;
 	float: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	display: inline-block;
 }
 
 #text{
-	padding-top: 80px;
+	padding-top: 90px;
 	width: 450px;
 	height: 400px;
 	float: left;
-	margin-left: 60px;
+	margin-left: 30px;
 	display: inline-block;
 }
 
@@ -111,6 +161,7 @@ header{
 	padding-top: 40px;
 	text-align: center;
 	width: 430px;
+	line-height: 1.5em;
 }
 
 #button{
@@ -119,10 +170,12 @@ header{
 	width: 270px;
 	height: 60px;
 	margin: auto;
+	border-radius: 10px;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 60px;
+	font-size: 25px;
 }
 
 #rightarrow{
@@ -148,7 +201,7 @@ section{
 	background-color: white;
 }
 
-#box1, #box2{
+#box_1, #box_2{
 	width: 330px;
 	height: 230px;
 	margin-top: 30px;
@@ -157,7 +210,7 @@ section{
 	position: relative;
 }
 
-#box1{
+#box_1{
 	margin-left: 65px;
 }
 
@@ -166,11 +219,10 @@ section{
 	height: 65px;
 	z-index: 1;
 	position: absolute;
-	bottom: -120px;
-	left: 130px;
+	bottom: 20px;
+	left: 0;
 	font-weight: bold;
-	background-color: #fff;
-	opacity: 0.5;
+	background-color: rgba(255,255,255, .5);
 }
 
 #chair1 > p{
@@ -186,11 +238,10 @@ section{
 	height: 65px;
 	z-index: 1;
 	position: absolute;
-	bottom: -120px;
-	left: 490px;
+	bottom: 20px;
+	left: 1px;
 	font-weight: bold;
-	background-color: #fff;
-	opacity: 0.5;
+	background-color: rgba(255,255,255, .5);
 }
 
 #chair2 > p{
@@ -247,7 +298,7 @@ main{
 	vertical-align: top;
 	margin-left: 60px;
 	margin-right: -30px;
-	border: 2px solid #c2c2c2;
+	border: 2px solid #d7d7d7;
 	margin-top: 80px;
 	background-color: #f9f9f9;
 }
@@ -256,7 +307,7 @@ main{
 	width: 60px;
 	height: 60px;
 	border-radius: 35px;
-	border: 2px solid #c2c2c2;
+	border: 2px solid #d7d7d7;
 	background: white;
 	position: absolute;
 	top: -45px;
@@ -285,51 +336,89 @@ main{
 	width: 130px;
 	height: 130px;
 	border-radius: 70px;
-	border: 2px solid #c2c2c2;
+	border: 2px solid #d7d7d7;
 	position: absolute;
 	left: 100px;
 	top: 80px;
 	background-color: #fff;
-	font-size: 12px;
 	font-weight: bold;
-	color: #c4c4c4;
+	color: #c6c6c6;
 }
 
-.big_circle > span{
-	font-size: 40px;
+.big_circle_text{
+	position: absolute;
+	left: 35px;
+	top: 25px;
+	font-size: 45px;
+}
 
+.big_circle_text > span{
+	font-size: 18px;
+	position: absolute;
+	top: -1px;
+	left: 52px;
+}
+
+.big_circle_text_2{
+	position: absolute;
+	left: 15px;
+	top: 25px;
+	font-size: 45px;
+}
+
+.big_circle_text_2 > span{
+	position: absolute;
+	top: 1px;
+	left: 68px;
+	font-size: 18px;
+}
+
+.pln{
+	position: absolute;
+	top: 50px;
+	left: -15px;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.pln_2{
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	font-size: 18px;
+	margin-top: 5px;
 }
 
 .first_option{
 	margin-top: 190px;
-	line-height: 40px;
+	line-height: 44px;
 	text-align: center;
 	background-color: #e4e4e4;
-	font-size: 18px;
+	font-size: 24px;
 	color: #a6a6a6;
 }
 
 .second_option{
-	line-height: 40px;
+	line-height: 44px;
 	text-align: center;
 	background-color: #f1f1f1;
-	font-size: 18px;
+	font-size: 24px;
 	color: #a6a6a6;
 }
 
 .third_option{
-	line-height: 40px;
+	line-height: 44px;
 	text-align: center;
 	background-color: #e4e4e4;
-	font-size: 18px;
+	font-size: 24px;
 	color: #a6a6a6;
 }
 
 .forth_option{
-	line-height: 40px;
+	line-height: 44px;
 	text-align: center;
 	background-color: #f1f1f1;
-	font-size: 18px;
+	font-size: 24px;
 	color: #a6a6a6;
 }
 
@@ -411,23 +500,27 @@ footer{
 #form input {
 	width: 615px;
 	height: 65px;
-	border: 1px solid #27c7ab;
+	border: 1px solid #a1e6d1;
 	margin-left: 40px;
 	margin-top: 25px;
-	font-size: 24px;
+	font-size: 35px;
 	padding-left: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #bebebe;
 }
 
 #form textarea {
 	width: 615px;
 	height: 170px;
-	border: 1px solid #27c7ab;
+	border: 1px solid #a1e6d1;
 	margin-left: 40px;
 	margin-top: 25px;
 	resize: none;
-	font-size: 24px;
+	font-size: 35px;
 	padding-left: 20px;
 	padding-top: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #bebebe;
 }
 
 #right_footer{
@@ -447,16 +540,17 @@ footer{
 	width: 400px;
 	height: 80px;
 	float: left;
-	font-size: 20px;
+	font-size: 22px;
 	margin-left: 10px;
 	margin-top: 30px;
 	margin-bottom: 10px;
+	color: #bebebe;
 }
 
 #form_ok{
 	float: left;
-	border: 1px solid #27c7ab;
-	padding: 5px 5px 3px 0;
+	border: 1px solid #a1e6d1;
+	padding: 10px 4px 3px 0;
 	margin-right: 10px;
 }
 
@@ -471,23 +565,30 @@ footer{
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 10px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #foot_of_footer{
-	margin-top: 100px;
-	width: 100%;
+	margin-top: 80px;
+	width: 1200px;
+	height: 50px;
+	color: #9b9b9b;
+	letter-spacing: 1px;
+	position: relative;
 }
 
 #copyright{
 	display: inline-block;
 	width: 750px;
-	float: left;
+	float: left;	
 }
 
 #social_links{
 	float: left;
 	display: inline-block;
 	width: 200px;
+	position: absolute;
+	top: -15px;
 }
 
 #footer_logo{
@@ -499,6 +600,6 @@ footer{
 }
 
 #footer_logo > span{
-	font-weight: bold;
+	font-weight: bolder;
 	display: inline-block;
 }
