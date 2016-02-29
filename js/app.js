@@ -71,6 +71,14 @@ $('#box2').on('mouseleave', function(){
 
 	})
 
+//dropdowns
 
+	// $('.arrow-down').on('click', function(){
+	// 	$(this).find('li').css('display', 'block');
+	// })
+	
+	$('#check2').on('click', function(){
+		$('#check2').toggleClass('check3');
+	})
 
 });
