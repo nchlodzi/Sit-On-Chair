@@ -3,18 +3,20 @@ $(document).ready(function(){
 //wysuwane menu
 
 $('#menu a').first().on('mouseover', function(){
-	$('#addlist').slideDown(500);
-})
-$('#addlist').on('mouseover', function(){
-	$('this').css('display', 'block');
+	$('#addlist').slideDown(500).css('display', 'block');
 })
 
 $('#addlist').on('mouseleave', function(){
 	$('#addlist').slideUp(500);
 })
 
+// $('#menu a').first().hover(function(){
+// 	$('#addlist').slideDown(500).css('display', 'block');
+// })
+
+
 // $('#menu a').first().on('mouseleave', function(){
-// 	$('#addlist').slideUp(500);
+// 	$('#addlist').css('display', 'none');
 // })
 
 //chairs
@@ -73,9 +75,9 @@ $('#box2').on('mouseleave', function(){
 
 //dropdowns
 
-	// $('.arrow-down').on('click', function(){
-	// 	$(this).find('li').css('display', 'block');
-	// })
+	$('.arrow-down').first().on('click', function(){
+		$('.drop').css('display', 'block');
+	})
 	
 	$('#check2').on('click', function(){
 		$('#check2').toggleClass('check3');

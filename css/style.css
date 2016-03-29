@@ -36,13 +36,23 @@ nav{
 }
 
 ol{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 	display: inline-block;
-	position: relative;
+	/*position: relative;*/
+}
+
+ol a{
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 ol > li{
-	display: block;
-	list-style-type: none;
+/*	display: block;*/
 	padding-top: 13px;
 	font-size: 14px;
 	float: left;
@@ -51,54 +61,52 @@ ol > li{
 	width: 100px;
 }
 
-ol > li > a{
-	text-decoration: none;
-	display: inline-block;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
 
 ol > li > a:hover{
 	font-weight: bold;
 }
 
-#addlist {
-	position: absolute;
-	left: 1160px;
-	top: 40px;
+ol > li > ul#addlist {
+	list-style-type: none;
 	display: none;
-	padding-left: 0px;
+	padding: 0;
+	margin: 0;
 	width: 120px;
-
+	margin-top: 13px;
 }
 
-#addlist > li{
-	list-style-type: none;
+/*ol > li:hover > ul#addlist{
+	display: block;
+}*/
+
+ol > li > ul#addlist > li{
 	background-color: black;
+	position: relative;
 	width: 120px;
 	height: 25px;
-	display: block;
 	text-align: left;
 	padding-top: 8px; 
 }
 
-#addlist> li > a{
+
+
+ol > li > ul#addlist> li > a{
 	text-decoration: none;	
 	color: white;
-	padding-left: 15px;
+	padding-left: 12px;
 	font-size: 15px;
-	letter-spacing: 0;
+	letter-spacing: 1px;
 	width: 120px;
 	height: 25px;
+	text-transform: none;
 
 }
-#addlist > li:hover > a{
+ol > li > ul#addlist > li:hover > a{
 	font-weight: bold;
-
 }
+
 .arrow-up {
-	margin-left: 50px;
+	margin-left: 46px;
 	margin-top: 4px;
 	width: 0; 
 	height: 0; 
@@ -561,7 +569,7 @@ article{
 	padding-left: 15px;
 }
 
-.dropdowns ul{
+.dropdowns ul.drop{
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -569,8 +577,8 @@ article{
 	
 }
 
-.dropdowns ul:hover li{
-
+.dropdowns span:hover li{
+	display: block;
 	position: relative;
 }
 
