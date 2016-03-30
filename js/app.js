@@ -2,22 +2,14 @@ $(document).ready(function(){
 
 //wysuwane menu
 
-$('#menu a').first().on('mouseover', function(){
-	$('#addlist').slideDown(500).css('display', 'block');
-})
 
-$('#addlist').on('mouseleave', function(){
-	$('#addlist').slideUp(500);
-})
-
-// $('#menu a').first().hover(function(){
-// 	$('#addlist').slideDown(500).css('display', 'block');
-// })
-
-
-// $('#menu a').first().on('mouseleave', function(){
-// 	$('#addlist').css('display', 'none');
-// })
+$('ol#menu li').hover(function(){
+	$(this).find('#addlist').slideDown(500);
+}, 
+function(){
+	$(this).find('#addlist').slideUp(500);
+}
+);
 
 //chairs
 
