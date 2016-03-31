@@ -40,7 +40,6 @@ ol{
 	margin: 0;
 	list-style-type: none;
 	display: inline-block;
-	/*position: relative;*/
 }
 
 ol a{
@@ -52,7 +51,6 @@ ol a{
 }
 
 ol > li{
-/*	display: block;*/
 	padding-top: 13px;
 	font-size: 14px;
 	float: left;
@@ -75,9 +73,6 @@ ol > li > ul#addlist {
 	margin-top: 13px;
 }
 
-/*ol > li:hover > ul#addlist{
-	display: block;
-}*/
 
 ol > li > ul#addlist > li{
 	background-color: black;
