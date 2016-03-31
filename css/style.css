@@ -599,30 +599,6 @@ article{
   	line-height: 25px;
 }
 
-/*.dropdowns ul.drop{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	
-}*/
-
-/*.dropdowns span:hover li{
-	display: block;
-	position: relative;
-}*/
-
-/*.dropdowns li{
-	color: #575757;
-	background-color: #fff;
-	z-index: 100;
-	left: -16px;
-	display: none;
-	width: 300px;
-	padding-left: 15px;
-	
-}*/
-
 .arrow-down{
 	width: 0; 
 	height: 0; 
@@ -747,36 +723,6 @@ article{
   font-size: 22px;
   color: #24baa0;
 }
-
-
-
-
-
-
-/*#summary2{
-	width: 320px;
-	height: 216px;
-	float: right;
-	margin-top: 50px;
-	margin-right: 40px;
-	background-color: #fff;
-}
-
-#line-up{
-	width: 3px;
-	height: 150px;
-	background-color: #f9f9f9;
-	margin-left: 200px;
-	margin-top: 10px;
-	
-}
-
-#line-horizontal{
-	width: 300px;
-	height: 3px;
-	background-color: #f9f9f9;
-	margin-left: 10px;
-}*/
 
 #order{
 	float: right;

@@ -76,6 +76,7 @@ $('#box2').on('mouseleave', function(){
 
 
 	var clair = $('.dropdowns').first().find('.drop li').first();
+	
 		clair.on('click', function(){
 			$(this).parent().siblings('.dropLabel').html('Clair');
 			$('.title').html('Clair');
@@ -87,6 +88,7 @@ $('#box2').on('mouseleave', function(){
 
 
 	var margarita = $('.dropdowns').first().find('.drop li').eq(1);
+
 		margarita.on('click', function(){
 			$(this).parent().siblings('.dropLabel').html('Margarita');
 			$('.title').html('Margarita');			
@@ -145,33 +147,32 @@ $('#box2').on('mouseleave', function(){
 		tkanina.on('click', function(){
 			$(this).parent().siblings('.dropLabel').html('Tkanina');
 			$('.pattern').html('Tkanina');
-			$('.pattern_chair').html(patternPrice);
 			var patternPrice = tkanina.data('price');
+			$('.pattern_chair').html(patternPrice);
 			sumSummary();
 		})
 
 	var skora = $('.dropdowns').eq(2).find('.drop li').eq(1);
 
-	
 		skora.on('click', function(){
 			$(this).parent().siblings('.dropLabel').html('Skóra');
 			$('.pattern').html('Skóra');
-			$('.pattern_chair').html(patternPrice);
 			var patternPrice = skora.data('price');
+			$('.pattern_chair').html(patternPrice);
 			sumSummary();
 		})
 
 
 	var check2 = $('#check2');
 
-	var transportPrice = check2.data('price');
+	
 	check2.on('click', function(){
 		check2.toggleClass('check3');
 
 		if (check2.hasClass('check3')){
-			$('.transport').html('Transport');		
+			$('.transport').html('Transport');					
+			var transportPrice = check2.data('price');
 			$('.transport_chair').html(transportPrice);
-
 		} else{
 			$('.transport').html('Transport');
 			$('.transport_chair').html("0");
