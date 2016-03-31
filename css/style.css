@@ -567,36 +567,60 @@ article{
 	text-align: left;
 	line-height: 56px;
 	padding-left: 15px;
+	position: relative;
 }
 
-.dropdowns ul.drop{
+.dropLabel{
+	font-size: 30px;
+  	color: #e2e2e2;
+  	font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
+}
+
+.drop{
+	background-color: white;
+  	border: 1px solid #ccc;
+ 	width: 299px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+ 	list-style: none;
+  	margin: 0;
+  	left: 0px;
+  	z-index: 2;
+  	position: absolute;
+  	top: 54px;
+	display:none;
+}
+
+.drop li {
+  	margin-top: 8px;
+ 	cursor: pointer;
+  	color: #585858;
+  	font-size: 20px;
+  	line-height: 25px;
+}
+
+/*.dropdowns ul.drop{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 	
-}
+}*/
 
-.dropdowns span:hover li{
+/*.dropdowns span:hover li{
 	display: block;
 	position: relative;
-}
+}*/
 
-.dropdowns li{
-	font-size: 16px;
+/*.dropdowns li{
 	color: #575757;
 	background-color: #fff;
 	z-index: 100;
 	left: -16px;
 	display: none;
 	width: 300px;
-	line-height: 30px;
 	padding-left: 15px;
 	
-}
-
-/*.drop{
-	border: 1px solid #b1b1b1;
 }*/
 
 .arrow-down{
@@ -605,9 +629,11 @@ article{
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-top: 15px solid #75d6c8;
-	float: right;
-	margin-top: 22px;
-	margin-right: 25px;
+	display:block;
+  	position: absolute;
+  	cursor: pointer;
+  	right: 14px;
+  	top: 20px;
 }
 
 #checking{
@@ -648,7 +674,8 @@ article{
 	width: 350px;
 	height: 460px;
 	display: inline-block;
-	float: right;
+	float: left;
+	margin-left: 110px;
 }
 
 #summary{
@@ -657,7 +684,76 @@ article{
 	text-align: right;
 }
 
-#summary2{
+.summary_panel {
+  background-color: white;
+  width: 85%;
+  height: 195px;
+  padding: 10px;
+  margin-top: 140px;
+
+}
+
+.panel_left {
+  display: inline-block;
+  width: 185px;
+  vertical-align: top;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_right {
+  display: inline-block;
+  width: 100px;
+  border-left:1px solid #e7e7e7;
+  text-align: right;
+  vertical-align: top;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_left h4 , .panel_right h4{
+  color: #24baa0;
+  font-size: 23px;
+}
+
+.panel_left span{
+  margin-top:10px;
+  font-size: 22px;
+  color: #5b5a5a;
+  display: block;
+}
+
+.panel_right span {
+  display: block;
+  font-size: 22px;
+  color: #24baa0;
+  margin-top:10px;
+}
+.sum_label{
+  display: inline-block;
+  width: 185px;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5b5a5a;
+}
+
+.sum {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #24baa0;
+}
+
+
+
+
+
+
+/*#summary2{
 	width: 320px;
 	height: 216px;
 	float: right;
@@ -680,7 +776,7 @@ article{
 	height: 3px;
 	background-color: #f9f9f9;
 	margin-left: 10px;
-}
+}*/
 
 #order{
 	float: right;
